@@ -33,6 +33,8 @@ class Chef
   class Resource::ZapCrontab < Resource::Zap
     include Chef::Mixin::ShellOut
 
+    provides :zap_crontab
+
     def initialize(name, run_context = nil)
       super
 

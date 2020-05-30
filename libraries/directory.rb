@@ -25,6 +25,8 @@ require_relative 'default.rb'
 class Chef
   # resource
   class Resource::ZapDirectory < Resource::Zap
+    provides :zap_directory
+
     def initialize(name, run_context = nil)
       super
 

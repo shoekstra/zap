@@ -26,6 +26,8 @@ require_relative 'default.rb'
 class Chef
   # resource
   class Resource::ZapGroups < Resource::Zap
+    provides :zap_groups
+
     def initialize(name, run_context = nil)
       super
 

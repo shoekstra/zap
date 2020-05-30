@@ -34,6 +34,8 @@ class Chef
   class Resource::Zap < Resource
     attr_reader :klass
 
+    provides :zap
+
     def initialize(name, run_context = nil)
       super
 

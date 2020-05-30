@@ -33,6 +33,8 @@ end
 class Chef
   # resource
   class Resource::ZapUsers < Resource::Zap
+    provides :zap_users
+
     def initialize(name, run_context = nil)
       super
 
